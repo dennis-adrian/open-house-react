@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html {
+  /* WHY 62,5% ?
+  This font size is great for calculations of the font size using rem
+  By default, browsers give 16px of font-size to the html document
+  By resizing to 62.5% it would mean that the font-size of the document is now 10px
+  We can now easy calcuations by just multiplying the rem font-size by 10
+  For example,
+  1.6rem = 16px
+  2rem = 20px
+  1rem = 1px
+  1.4rem = 14px
+  */
+  font-size: 62.5%;
+}
+
+.intro-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.invitation {
+  background-color: #C097FA;
+  color: #FCFBFC;
+}
+
+.invitation .invitation-text {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.invitation .regular {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.invitation-text .regular {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.invitation-text .highlight {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 8rem;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.login {
+  background-color: #EFFA97;
+  
+}
+
+.login .intro-text {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  padding: 2rem;
+}
+
+.intro-text p {
+  font-family: 'Indie Flower', cursive;
+}
+
+.cta {
+  margin-bottom: 6rem;
+}
+
+.cta button {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.8rem;
+  background-color: #FFD93B;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+}
