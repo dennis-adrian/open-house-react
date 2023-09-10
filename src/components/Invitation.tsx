@@ -1,4 +1,5 @@
 import IntroImage from "./IntroImage";
+import imageUrl from "../assets/kitchen-view.png"
 
 function Invitation() {
     return (
@@ -8,7 +9,7 @@ function Invitation() {
           <p className="highlight">Open House</p>
           <p className="regular">16 de septiembre a las 18:00</p>
         </section>
-        <IntroImage description="kitchen view" src="src/assets/kitchen-view.png" />
+        <IntroImage description="kitchen view" src={imageUrl} />
       </div>
     );
 }

@@ -1,9 +1,10 @@
 import IntroImage from "./IntroImage";
+import imageUrl from "../assets/dining-view.png"
 
 function Login() {
   return (
     <div className="intro-page login">
-      <IntroImage description="dining view" src="src/assets/dining-view.png" />
+      <IntroImage description="dining view" src={imageUrl} />
       <div className="intro-text">
         <p>Hola, somos Dennis y Andy.
           Estamos muy felices de formar nuestro hogar y queremos compartirlo con nuestros amigos mas cercanos
