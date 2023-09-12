@@ -1,5 +1,6 @@
-import IntroImage from "./IntroImage";
-import imageUrl from "../assets/dining-view.png"
+import IntroImage from './IntroImage';
+import { signInWithGoogle } from '../helpers/auth_helpers';
+import imageUrl from '../assets/dining-view.png';
 
 function Login() {
   return (
@@ -11,7 +12,7 @@ function Login() {
         </p>
       </div>
       <div className="cta">
-        <button type="button">Coloca tu nombre para iniciar</button>
+        <button type="button" onClick={() => signInWithGoogle()}>Inicia sesion para continuar</button>
       </div>
     </div>
   )
