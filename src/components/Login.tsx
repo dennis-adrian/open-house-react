@@ -3,6 +3,13 @@ import { signInWithGoogle } from '../helpers/auth_helpers';
 import imageUrl from '../assets/dining-view.png';
 
 function Login() {
+  const login = async () => {
+    const result = await signInWithGoogle();
+    if (result?.email) {
+      location.reload();
+    }
+  }
+
   return (
     <div className="intro-page login">
       <IntroImage description="dining view" src={imageUrl} />
@@ -12,7 +19,7 @@ function Login() {
         </p>
       </div>
       <div className="cta">
-        <button type="button" onClick={() => signInWithGoogle()}>Inicia sesion para continuar</button>
+        <button type="button" onClick={() => login()}>Inicia sesion para continuar</button>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ function Invitation() {
       <div className="intro-page invitation">
         <section className="invitation-text">
           <p className="regular">Dennis y Andy te invitan a su</p>
-          <p className="highlight">Open House</p>
+          <p className="highlight">House Warming Party</p>
           <p className="regular">16 de septiembre a las 18:00</p>
         </section>
         <IntroImage description="kitchen view" src={imageUrl} />
